@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="320.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.settingController">
+   <children>
+      <BorderPane prefHeight="480.0" prefWidth="320.0">
+         <center>
+            <!-- VBox로 버튼 중앙 정렬 -->
+            <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="308.0" prefWidth="250.0" spacing="20" BorderPane.alignment="CENTER">
+               <ImageView fitHeight="61.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../images/twitterIcon.png" />
+                  </image>
+                  <VBox.margin>
+                     <Insets bottom="20.0" />
+                  </VBox.margin>
+               </ImageView>
+               <!-- Change Password 버튼 -->
+               <Button prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #2196F3; -fx-text-fill: white; -fx-background-radius: 20;" text="Change Password" onAction="#handleChangePasswordButton">
+                  <font>
+                     <Font name="Arial" size="16.0" />
+                  </font>
+               </Button>
+      
+                     <!-- Log Out 버튼 -->
+               <Button prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-background-radius: 20;" text="Log Out" onAction="#handleLogoutButton">
+                  <font>
+                     <Font name="Arial" size="15.0" />
+                  </font>
+                  <VBox.margin>
+                     <Insets />
+                  </VBox.margin>
+               </Button>
+            </VBox>
+         </center>
+         <bottom>
+            <Button fx:id="backButton" onAction="#handleBackButton" graphicTextGap="1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: white;" BorderPane.alignment="BOTTOM_RIGHT">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/backIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <BorderPane.margin>
+                  <Insets bottom="10.0" right="20.0" />
+               </BorderPane.margin>
+            </Button>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

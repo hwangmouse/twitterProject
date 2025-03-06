@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="480.0" prefWidth="320.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.changepwController">
+   <children>
+      <!-- 중앙 정렬을 위해 VBox 사용 -->
+      <VBox alignment="CENTER" layoutX="40.0" layoutY="50.0" prefHeight="380.0" prefWidth="240.0" spacing="20">
+         <ImageView fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../images/twitterIcon.png" />
+            </image>
+         </ImageView>
+         <!-- 기존 비밀번호 입력 필드 -->
+         <PasswordField fx:id="currentPasswordField" prefHeight="40.0" prefWidth="200.0" promptText="Current PW" style="-fx-background-radius: 15; -fx-font-size: 14px;" />
+
+         <!-- 비밀번호 입력 필드 -->
+         <PasswordField fx:id="newPasswordField" prefHeight="40.0" prefWidth="200.0" promptText="New PW" style="-fx-background-radius: 15; -fx-font-size: 14px;" />
+
+         <!-- 비밀번호 확인 필드 -->
+         <PasswordField fx:id="confirmPasswordField" prefHeight="40.0" prefWidth="200.0" promptText="Check New PW" style="-fx-background-radius: 15; -fx-font-size: 14px;" />
+
+         <!-- 확인 버튼 -->
+         <Button fx:id="changeButton" onAction="#handleChangeButton" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-size: 16px; -fx-background-radius: 20;" text="Change" />
+      </VBox>
+      <Button fx:id="backButton" graphicTextGap="1.0" layoutX="260.0" layoutY="430.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/backIcon.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+   </children>
+</AnchorPane>

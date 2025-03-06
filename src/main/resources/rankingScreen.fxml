@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="320.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.rankingController">
+   <children>
+      <VBox layoutY="1.0" prefHeight="480.0" prefWidth="320.0">
+         <children>
+            <HBox alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="56.0" prefWidth="289.0">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="10.0" right="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="15.0" />
+               </padding>
+               <children>
+                  <Label text="Today's Top 10">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="20.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            
+            <!-- 리스트 뷰 -->
+            <ListView fx:id="postListView" minWidth="-Infinity" prefHeight="330.0" prefWidth="320.0" style="-fx-background-color: white;">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </ListView>
+            <HBox alignment="BOTTOM_RIGHT" prefHeight="107.0" prefWidth="320.0">
+               <children>
+                  <Button fx:id="backButton" graphicTextGap="1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: white;">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/backIcon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" right="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <ImageView fitHeight="30.0" fitWidth="24.0" layoutX="247.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" rotate="43.7">
+         <image>
+            <Image url="@../images/crownIcon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
