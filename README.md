@@ -1,6 +1,7 @@
-#Twitter-Clone-Project
+# Twitter-Clone-Project
 mySQL을 이용한 트위치 sns 어플 구
 
+----
 ## 🖥️ 프로젝트 소개
 mySQL을 이용한 트위치 sns 앱 구현
 <br>
