@@ -1,7 +1,6 @@
 # Twitter-Clone-Project
 MySQL + JavaFX 를 이용한 트위치 sns 어플 구현
 
-  
 ## 🖥️ 프로젝트 소개
 데이터베이스(MySQL)를 활용하여 sns clone 앱 구현
 <br>
