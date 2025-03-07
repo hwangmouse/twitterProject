@@ -31,8 +31,13 @@ MySQL + JavaFX 를 이용한 트위치 sns 어플 구현
 #### 사용자 검색
 - 차단 / 팔로우
 #### 금일 랭킹 페이지
-- 
-####
+- 날짜, 좋아요 수로 내림차순 피드 나열
+#### 사용자 정보
+- 사용자 글, 좋아요, 팔로워, 팔로잉 확인
+- 사용자 프로필 변경
+#### 회원정보
+- PW 변경
+- 로그아웃
 
-
+## 📄 참고자료
 [Database Termproject.pdf](https://github.com/user-attachments/files/19102367/Database.Termproject.pdf)
